@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRECES A GANESHA</title>
+    <link rel="stylesheet" href="./assets/css/estilo.css">
+    <link rel="stylesheet" href="./assets/image/favicon-32x32.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main-recados">
+        <header>
+            <h1 id="titulo-home"></h1>
+            <button id="logout">SAIR</button>
+            <form id="form-novo-recado">
+                <input required type="text" placeholder="PEDIDO" 
+                    id="titulo-novo-recado-input" maxlength="28" />
+                <input required type="text" placeholder="DIGA COMO É" 
+                    id="novo-recado-input" maxlength="110" />
+                <input type="submit" value="NOVA PRECE" id="novo-recado-submit" />
+            </form>
+        </header>
+
+        <main>
+            <div class="lista-recados">
+                <h2 id="cabecalho-titulo">PEDIDO</h2>
+                <h2 id="cabecalho-descricao">DIGA COMO É</h2>
+                <div id="recados"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="./assets/js/home.js"></script>
+</body>
+
+</html>
