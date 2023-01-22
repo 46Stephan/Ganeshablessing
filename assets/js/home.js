@@ -10,7 +10,9 @@ const botaoLogout = document.getElementById('logout');
 const tituloComNome = document.getElementById('titulo-home');
 
 document.addEventListener('DOMContentLoaded', () => {
+
     checarLogado();
+
     function checarLogado() {
         if (!logado) {
             window.location.href = "index.html"
@@ -39,12 +41,14 @@ botaoLogout.addEventListener('click', () => {
 
 formRecado.addEventListener('submit', (e) => {
     e.preventDefault();
+
     salvarRecado();
 });
 
 function salvarRecado() {
     let recado = inputNovoRecado.value;
     let tituloRecado = inputTituloNovoRecado.value;
+
     const novoRecado = {
         titulo: tituloRecado,
         detalhamento: recado,
@@ -53,6 +57,7 @@ function salvarRecado() {
 
     let user = listaUsuarios.find(
         (valor) => valor.email == logado);
+
     user.recados.push(novoRecado);
     atualizarDadosUsuario(user);
     formRecado.reset();
@@ -104,9 +109,9 @@ function montarRecado(novoRecado) {
     botaoEditarRecado.classList.add('editar-recado');
     botaoEditarRecado.innerHTML = 'Editar';
 
-    const botaoDeletarRecado = document.createElement('button');
-    botaoDeletarRecado.classList.add('deletar-recado');
-    botaoDeletarRecado.innerHTML = 'Deletar';
+    const botaoDeletarRecado = document.createElement("button");
+    botaoDeletarRecado.classList.add("deletar-recado");
+    botaoDeletarRecado.innerHTML = "Deletar";
     botoesRecado.appendChild(botaoEditarRecado);
     botoesRecado.appendChild(botaoDeletarRecado);
     elementoRecado.appendChild(botoesRecado);
@@ -149,7 +154,7 @@ function apagarRecado(id) {
 
     let recadoEspecifico = user.recados.findIndex((recado) => recado.id === id);
     let linhaRecado = document.getElementById(id);
-    let confirm = confirm(`Deseja realmente apagar este recado?`);
+    let confirm = confirm(`Deseja realmente apagar sua prece?`);
 
     if (confirm) {
         linhaRecado.remove();
