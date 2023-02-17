@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body{
+    overflow: hidden;
+}
+
 .main-login, .main-cadastro{
     width: 100vw;
     height: 100vh;

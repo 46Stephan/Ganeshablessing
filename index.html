@@ -1,39 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRECES A GANESHA</title>
+    <link rel="stylesheet" href="./assets/css/estilo.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRECES A GANESHA </title>
-    <link rel="stylesheet" href="./assets/css/estilo.css">
-    <link rel="stylesheet" href="./assets/image/favicon-32x32.png" type="image/x-icon">
-</head>
-
-<body>
+  <body>
     <div class="main-login">
-        <div class="titulo-login">
-            <img src="" alt=""><span></span>
+      <div class="titulo-login"><img src="" alt="" /><span></span></div>
+
+      <div class="card-login">
+        <h1>LOGIN</h1>
+        <div class="inputs-login">
+          <label for="usuario">E-mail</label>
+          <input
+            required
+            id="usuario"
+            type="email"
+            name="usuario"
+            placeholder="Informe o seu e-mail:"
+          />
         </div>
 
-        <div class="card-login">
-            <h1>LOGIN</h1>
-            <div class="inputs-login">
-                <label for="usuario">E-mail</label>
-                <input required id="usuario" type="email" name="usuario" placeholder="Informe o seu e-mail:">
-            </div>
-
-            <div class="inputs-login">
-                <label for="senha">SENHA</label>
-                <input required id="senha" type="password" name="senha" placeholder="Informe a sua senha:">
-            </div>
-
-            <button class="btn-login" id="btn-login">LOGIN</button>
-            <p class="texto-cadastro">Não tenho uma conta! <a href="./cadastro.html">CADASTRE-SE</a></p>
+        <div class="inputs-login">
+          <label for="senha">SENHA</label>
+          <input
+            required
+            id="senha"
+            type="password"
+            name="senha"
+            placeholder="Informe a sua senha:"
+          />
         </div>
+
+        <button class="btn-login" id="btn-login">LOGIN</button>
+        <p class="texto-cadastro">
+          Não tenho uma conta! <a href="./cadastro.html">CADASTRE-SE</a>
+        </p>
+      </div>
     </div>
 
+    <script src="./assets/js/bootstrap.js"></script>
     <script src="./assets/js/index.js"></script>
-</body>
-
+  </body>
 </html>

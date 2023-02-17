@@ -1,42 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CADASTRO - PRECES A GANESHA</title>
-    <link rel="stylesheet" href="./assets/css/estilo.css">
-    <link rel="stylesheet" href="./assets/image/favicon-32x32.png" type="image/x-icon">
-</head>
+    <link rel="stylesheet" href="./assets/css/estilo.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+  </head>
 
-<body>
-    <form id="form">
-        <div class="main-cadastro">
+  <body>
+
+        <form id="form">
+          <div class="main-cadastro">
             <div class="card-cadastro">
-                <h1>CRIAR CONTA</h1>
-                <div class="inputs-cadastro">
-                    <label for="usuario">USUÁRIO</label>
-                    <input required id="valorUsuario" type="text" name="usuario" placeholder="Usuário">
-                </div>
+              <h1>CRIAR CONTA</h1>
+              <div class="inputs-cadastro">
+                <label for="usuario">USUÁRIO</label>
+                <input
+                  required
+                  id="valorUsuario"
+                  type="text"
+                  name="usuario"
+                  placeholder="Usuário"
+                />
+              </div>
 
-                <div class="inputs-cadastro">
-                    <label for="email">E-MAIL</label>
-                    <input required id="valorEmail" type="email" name="email" placeholder="E-Mail">
-                </div>
-                <div class="inputs-cadastro">
-                    <label for="senha">SENHA</label>
-                    <input minlength="5" required id="valorSenha" type="password" name="senha" placeholder="Senha">
-                </div>
-                <div class="inputs-cadastro">
-                    <label for="senha">CONFIRME A SUA SENHA</label>
-                    <input minlength="5" required id="valorSenha2" type="password" name="senha" placeholder="Senha">
-                </div>
-                <input class="btn-cadastro" type="submit" value="Cadastrar">
+              <div class="inputs-cadastro">
+                <label for="email">E-MAIL</label>
+                <input
+                  required
+                  id="valorEmail"
+                  type="email"
+                  name="email"
+                  placeholder="E-Mail"
+                />
+              </div>
+              <div class="inputs-cadastro">
+                <label for="senha">SENHA</label>
+                <input
+                  minlength="5"
+                  required
+                  id="valorSenha"
+                  type="password"
+                  name="senha"
+                  placeholder="Senha"
+                />
+              </div>
+              <div class="inputs-cadastro">
+                <label for="senha">CONFIRME A SUA SENHA</label>
+                <input
+                  minlength="5"
+                  required
+                  id="valorSenha2"
+                  type="password"
+                  name="senha"
+                  placeholder="Senha"
+                />
+              </div>
+              <input class="btn-cadastro" type="submit" value="Cadastrar" />
             </div>
-        </div>
-    </form>
-    <script src="./assets/js/cadastro.js"></script>
-</body>
+          </div>
+        </form>
 
+    <script src="./assets/js/bootstrap.js"></script>
+    <script src="./assets/js/cadastro.js"></script>
+  </body>
 </html>
